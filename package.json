@@ -1,0 +1,89 @@
+{
+  "name": "presskit-pro",
+  "version": "1.0.0",
+  "description": "Professional Electronic Press Kit platform for artists across web, iOS, and Android",
+  "private": true,
+  "scripts": {
+    "setup": "npm run setup:server && npm run setup:web && npm run setup:mobile",
+    "setup:server": "cd server && npm install",
+    "setup:web": "cd client-web && npm install",
+    "setup:mobile": "cd client-mobile && npm install",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:web\" \"npm run dev:mobile\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:web": "cd client-web && npm run dev",
+    "dev:mobile": "cd client-mobile && npx expo start",
+    "build": "npm run build:server && npm run build:web",
+    "build:server": "cd server && npm run build",
+    "build:web": "cd client-web && npm run build",
+    "test": "npm run test:server && npm run test:web && npm run test:mobile",
+    "test:server": "cd server && npm test",
+    "test:web": "cd client-web && npm test",
+    "test:mobile": "cd client-mobile && npm test",
+    "lint": "npm run lint:server && npm run lint:web && npm run lint:mobile",
+    "lint:server": "cd server && npm run lint",
+    "lint:web": "cd client-web && npm run lint",
+    "lint:mobile": "cd client-mobile && npm run lint",
+    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,json,md}\"",
+    "clean": "npm run clean:server && npm run clean:web && npm run clean:mobile",
+    "clean:server": "cd server && rm -rf dist node_modules",
+    "clean:web": "cd client-web && rm -rf .next node_modules",
+    "clean:mobile": "cd client-mobile && rm -rf .expo node_modules",
+    "reset": "npm run clean && npm run setup",
+    "prepare": "husky install",
+    "postinstall": "husky install"
+  },
+  "workspaces": [
+    "server",
+    "client-web", 
+    "client-mobile"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1"
+  },
+  "lint-staged": {
+    "server/**/*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "client-web/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "client-mobile/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix", 
+      "prettier --write"
+    ],
+    "**/*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "keywords": [
+    "electronic-press-kit",
+    "epk",
+    "artists",
+    "musicians",
+    "nextjs",
+    "react-native",
+    "expo",
+    "nodejs",
+    "mongodb",
+    "typescript"
+  ],
+  "author": "PressKit Pro Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/presskit-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/presskit-pro/issues"
+  },
+  "homepage": "https://github.com/yourusername/presskit-pro#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+} 
