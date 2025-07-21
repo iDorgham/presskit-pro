@@ -8,9 +8,9 @@
 * [x] 0.3. **Create comprehensive README.md** for client-web directory (Next.js web app).
 * [x] 0.4. **Create comprehensive README.md** for client-mobile directory (Expo mobile app).
 * [x] 0.5. **Update project structure** with proper documentation cross-references.
-* [ ] 0.6. Create .env.example files for all directories with proper documentation.
-* [ ] 0.7. Set up development environment validation scripts.
-* [ ] 0.8. Create contributing guidelines and code style documentation.
+* [x] 0.6. **Create .env.example files for all directories with proper documentation.**
+* [x] 0.7. **Set up development environment validation scripts.**
+* [x] 0.8. **Create contributing guidelines and code style documentation.**
 
 ### Technology Stack Validation
 * [x] 0.9. **Validate Next.js 15** latest features and App Router best practices.

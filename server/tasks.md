@@ -13,6 +13,8 @@
 - [ ] Set up project structure: `src/`, `controllers/`, `models/`, `middleware/`, `routes/`, `services/`
 - [ ] Configure TypeScript build and development scripts
 - [ ] Create `.env.example` file with all required environment variables
+- [ ] Add environment validation script to check Node.js, MongoDB, .env presence, etc.
+- [ ] Reference contributing guidelines and code style documentation in project root
 
 ### **1.2 Security Infrastructure**
 - [ ] Install and configure security packages:

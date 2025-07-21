@@ -19,6 +19,9 @@
   - `react-native-gesture-handler` - Gestures
 - [ ] Configure TypeScript with strict mode
 - [ ] Set up project structure: `app/`, `components/`, `hooks/`, `services/`, `types/`
+- [ ] Create `.env.example` file with all required environment variables
+- [ ] Add environment validation script to check Node.js, Expo CLI, .env presence, etc.
+- [ ] Reference contributing guidelines and code style documentation in project root
 
 ### **1.2 Dark Theme Design System**
 - [ ] Configure dark theme color palette:

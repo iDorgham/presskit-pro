@@ -576,3 +576,52 @@ npx expo start --clear
 **🎉 Congratulations!** You're now ready to start building PressKit Pro. Follow the phase-by-phase approach in the task files, and you'll have a professional EPK platform up and running!
 
 **Need help?** Refer to the documentation files in `.cursor/` directory for detailed guidelines and best practices. 
+
+---
+
+## **What does this mean?**
+
+- Your local branch (`main`) is **behind** the remote branch on GitHub.
+- There are commits on GitHub that you do **not** have locally.
+- Git is preventing you from pushing to avoid overwriting changes on GitHub.
+
+---
+
+## **How to fix it**
+
+You need to **pull** the latest changes from GitHub, resolve any conflicts if they exist, and then push again.
+
+### **Step-by-step:**
+
+1. **Pull the latest changes:**
+   ```bash
+   git pull origin main
+   ```
+   - If there are conflicts, Git will tell you which files need to be resolved. Open those files, fix the conflicts, then:
+     ```bash
+     git add <conflicted-file>
+     git commit
+     ```
+
+2. **Push your changes:**
+   ```bash
+   git push origin main
+   ```
+
+---
+
+### **If you want to overwrite the remote branch (dangerous!)**
+
+If you are sure you want to overwrite the remote branch with your local branch (this will delete remote changes!), you can force push:
+```bash
+git push --force origin main
+```
+**Warning:** This is destructive and should only be used if you are certain you do not need the remote changes.
+
+---
+
+**Summary:**  
+- Run `git pull origin main` first, resolve any conflicts, then push again.
+- Only use `git push --force` if you are sure you want to overwrite the remote branch.
+
+If you get any errors during `git pull`, paste them here and I’ll help you resolve them! 

@@ -17,6 +17,9 @@
   - `next-themes` - Dark theme management
 - [ ] Configure TypeScript with strict mode and path mapping
 - [ ] Set up project structure: `app/`, `components/`, `lib/`, `hooks/`, `types/`
+- [ ] Create `.env.local.example` file with all required environment variables
+- [ ] Add environment validation script to check Node.js, .env presence, etc.
+- [ ] Reference contributing guidelines and code style documentation in project root
 
 ### **1.2 Design System Implementation** 
 - [ ] Configure Tailwind CSS with custom dark theme colors:
