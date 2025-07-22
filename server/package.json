@@ -1,0 +1,61 @@
+{
+  "name": "presskit-pro-server",
+  "version": "1.0.0",
+  "description": "Backend API server for PressKit Pro",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec ts-node server.ts",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts app.ts server.ts",
+    "lint:fix": "eslint src/**/*.ts app.ts server.ts --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sentry/node": "^9.40.0",
+    "axios": "^1.10.0",
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.4",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.5",
+    "stripe": "^18.3.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/express-rate-limit": "^5.1.3",
+    "@types/helmet": "^0.0.48",
+    "@types/jest": "^30.0.0",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.0.15",
+    "@types/supertest": "^6.0.3",
+    "@types/validator": "^13.15.2",
+    "jest": "^30.0.4",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "mongodb",
+    "typescript",
+    "presskit"
+  ],
+  "author": "PressKit Pro Team",
+  "license": "MIT",
+  "type": "commonjs"
+}
